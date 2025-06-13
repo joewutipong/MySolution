@@ -1,0 +1,8 @@
+name: Test Self-Hosted
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ['self-hosted', 'windows']
+    steps:
+      - run: echo "✅ Self-hosted runner works!"
